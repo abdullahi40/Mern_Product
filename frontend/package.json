@@ -170,7 +170,6 @@
     "loose-envify": "^1.4.0",
     "lru-cache": "^5.1.1",
     "math-intrinsics": "^1.1.0",
-    "mern-crash-course": "^1.0.0",
     "minimatch": "^3.1.2",
     "motion-dom": "^11.18.1",
     "motion-utils": "^11.18.1",
