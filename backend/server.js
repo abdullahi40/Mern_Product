@@ -6,6 +6,8 @@ import { connectDB } from "./config/db.js";
 
 import productRoutes from "./routes/product.route.js";
 
+const cors = require("cors");
+
 dotenv.config();
 
 const app = express();
@@ -14,6 +16,8 @@ const PORT = process.env.PORT || 5000;
 console.log(process.env.MONGO_URI);
 
 const __dirname = path.resolve();
+
+app.use(cors());
 
 app.use(express.json()); // allows us to accept JSON data in the req.body
 
