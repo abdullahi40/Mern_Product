@@ -15,7 +15,11 @@ console.log(process.env.MONGO_URI);
 
 const __dirname = path.resolve();
 
-app.use(cors());
+// Enable CORS only for your frontend URL
+app.use(cors({
+  origin: 'https://mern-product-iota.vercel.app',
+  credentials: true 
+}));
 
 app.use(express.json()); // allows us to accept JSON data in the req.body
 
