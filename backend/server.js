@@ -15,7 +15,14 @@ console.log(process.env.MONGO_URI);
 
 const __dirname = path.resolve();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL,
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 app.use(express.json()); // allows us to accept JSON data in the req.body
 

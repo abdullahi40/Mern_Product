@@ -20,9 +20,9 @@ const CreatePage = () => {
   });
   const toast = useToast();
 
-  const navigate = useNavigate();
-
   const { createProduct } = useProductStore();
+
+  const navigate = useNavigate();
 
   const handleAddProduct = async () => {
     const { success, message } = await createProduct(newProduct);
