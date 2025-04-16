@@ -7,11 +7,8 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-<<<<<<< HEAD
-=======
-        // target: "https://mern-product-6ygk.onrender.com",
->>>>>>> 9b8e336 (added backend package.json with type module)
-        target: "https://mern-product-backend-rho.vercel.app",
+        target: "https://mern-product-6ygk.onrender.com",
+        // target: "https://mern-product-backend-rho.vercel.app",
         changeOrigin: true,
         secure: false,
       },
